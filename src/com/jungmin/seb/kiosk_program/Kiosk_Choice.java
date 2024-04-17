@@ -21,7 +21,6 @@ public class Kiosk_Choice {
         int price;
 
         Kiosk_Menu menu = new Kiosk_Menu();
-        Kiosk_Cost cost = new Kiosk_Cost();
 
         do {
             // 안내 문구
@@ -45,7 +44,6 @@ public class Kiosk_Choice {
 
                     switch (number) {
                         case 1:
-                            System.out.println("111");
                             price = menu.getMenu_1_cost();
                             totalCost = totalCost + cost(price);
                             break;
