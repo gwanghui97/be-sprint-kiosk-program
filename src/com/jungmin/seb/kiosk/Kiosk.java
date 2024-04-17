@@ -8,11 +8,10 @@ public class Kiosk {
     private final static MenuItem menuItem3 = new MenuItem("충무 김밥", 1000);
     private final static MenuItem menuItem4 = new MenuItem("떡볶이", 2000);
 
-
     // 주문 안내 메시지를 출력하는 메서드를 정의할 수 있습니다.
     public void welcome() {
         System.out.println("안녕하세요. 김밥천국에 오신 것을 환영합니다.");
-        System.out.println("=".repeat(65));
+        System.out.println("=".repeat(66));
     }
 
     // 주문할 음식을 선택하는 메서드를 정의 할 수 있습니다.
@@ -28,6 +27,8 @@ public class Kiosk {
             Scanner sc = new Scanner(System.in);
             int menuNum = sc.nextInt();
 
+            if (menuNum != 0) {
+
                 switch (menuNum) {
                     case 1:
                         return menuItem1;
@@ -41,6 +42,9 @@ public class Kiosk {
                         System.out.println("잘못된 숫자를 입력하셨습니다. 다시 입력해 주세요.");
                         isTrue = false;
                 }
+            } else {
+                break;
+            }
         } while (isTrue == false);
         return null;
     }
