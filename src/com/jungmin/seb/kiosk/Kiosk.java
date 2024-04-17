@@ -28,9 +28,6 @@ public class Kiosk {
             Scanner sc = new Scanner(System.in);
             int menuNum = sc.nextInt();
 
-            if (menuNum <= 0 || menuNum > 4) {
-                System.out.println("잘못된 숫자를 입력하셨습니다. 다시 입력해 주세요.");
-            } else {
                 switch (menuNum) {
                     case 1:
                         return menuItem1;
@@ -41,10 +38,9 @@ public class Kiosk {
                     case 4:
                         return menuItem4;
                     default:
+                        System.out.println("잘못된 숫자를 입력하셨습니다. 다시 입력해 주세요.");
                         isTrue = false;
                 }
-            }
-
         } while (isTrue == false);
         return null;
     }

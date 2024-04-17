@@ -15,14 +15,14 @@ public class KioskApplication {
         // 메뉴 선택 메시지 출력
         MenuItem menu = kiosk.choice();
 
-        // 입력한 메뉴 개수 입력
-        kiosk.count();
-
-        // 실제 주문 로직
+        // 개수 입력
         int count = kiosk.count();
+
         totalCost = kiosk.order(menu, count);
 
         // 최종 출력 메시지
-        kiosk.output(totalCost);
+        if (count < 100) {
+            kiosk.output(totalCost);
+        }
     }
 }
