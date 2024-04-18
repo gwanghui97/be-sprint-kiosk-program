@@ -1,4 +1,4 @@
-package com.jungmin.seb.kioskref.V2;
+package com.jungmin.seb.kioskref.v4;
 
 public class MenuItem {
     private String name;

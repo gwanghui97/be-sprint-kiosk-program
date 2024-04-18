@@ -1,4 +1,4 @@
-package com.jungmin.seb.kioskref.V1;
+package com.jungmin.seb.kioskref.v1;
 
 import java.util.Scanner;
 
