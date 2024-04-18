@@ -3,7 +3,7 @@ package com.jungmin.seb.kiosk;
 import java.util.Scanner;
 
 public class Kiosk {
-    private final MenuItem menuItem1 = new MenuItem("김밥", 1000);
+    private final static MenuItem menuItem1 = new MenuItem("김밥", 1000);
     private final static MenuItem menuItem2 = new MenuItem("계란 김밥", 1500);
     private final static MenuItem menuItem3 = new MenuItem("충무 김밥", 1000);
     private final static MenuItem menuItem4 = new MenuItem("떡볶이", 2000);

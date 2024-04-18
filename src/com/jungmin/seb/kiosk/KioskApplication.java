@@ -20,6 +20,7 @@ public class KioskApplication {
 
         totalCost = kiosk.order(menu, count);
 
+
         // 최종 출력 메시지
         if (count < 100) {
             kiosk.output(totalCost);
